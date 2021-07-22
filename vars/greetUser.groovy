@@ -1,5 +1,5 @@
 def call(string username = 'null') {
-	echo "this is share library greetUser: $(username)"
+	echo "this is share library greetUser: $("username")"
 	pipeline {
 		environment {
 			USER_NAME = "$username"
