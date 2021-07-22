@@ -1,5 +1,5 @@
 def call(String username = 'null', String designation = 'null') {
-	echo "this is share library greetUser: ${username}"
+	echo "this is share library sendoffUser: ${username}"
 	pipeline {
 		environment {
 			USER_NAME = "$username"
@@ -7,7 +7,7 @@ def call(String username = 'null', String designation = 'null') {
 		}
 		agent any
 			stages {
-				stage('USER_NAME') {
+				stage('SECOND_USER') {
 					steps {
 						echo "HI $USER_NAME, How are you !"
 						echo "Designation: $DESG"
