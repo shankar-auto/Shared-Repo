@@ -6,7 +6,7 @@ def call(string username = 'null') {
 		}
 		agent any
 			stages {
-				stage {
+				stage('USER_NAME') {
 					steps {
 						echo "HI $USER_NAME, How are you !"
 					}
